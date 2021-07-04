@@ -1,6 +1,9 @@
 {% extends 'base.html '%}
 
 {% block content %}
+    {% if user.is_authenticated %}
+    아령하세요 {{user.location}}에 사는 {{user.university}} 다니는 {{user.nicknmae}}님 아령
+    {% endif%}
     
     <h1>Blog Project</h1>
     
